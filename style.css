@@ -228,3 +228,267 @@ body {
 .services-section .services-items .service-item-text {
     color: #fff;
 }
+
+/***** ABOUT SECTION ********/
+.aboutus-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;
+}
+.aboutus-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.aboutus-section .aboutus-image {
+    width: 50%;
+}
+
+.aboutus-section .aboutus-content h2 {
+    font-size: 30px;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.aboutus-section .aboutus-content h2 em {
+    color: var(--secondary-color);
+    font-style:  normal;
+}
+.aboutus-section .aboutus-content h2 span {
+    color: var(--primary-color);
+}
+.aboutus-section .aboutus-content p {
+    font-size: 15px;
+    color: #333333d6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item span {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item.first-bar span {
+    left: 66%;
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item.second-bar span {
+    left: 76%;
+}
+.aboutus-section .aboutus-content .aboutus-statistics-item.third-bar span {
+    left: 85%;
+}
+.aboutus-section .aboutus-statistics-item .progress-bar-filled {
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin-bottom: -6px;
+    position: relative;
+    z-index: 2;
+}
+.aboutus-section .aboutus-statistics-item.first-bar .progress-bar-filled {
+    width: 68%;
+}
+.aboutus-section .aboutus-statistics-item.second-bar .progress-bar-filled {
+    width: 78%;
+}
+.aboutus-section .aboutus-statistics-item.third-bar .progress-bar-filled {
+    width: 88%;
+}
+.aboutus-section .aboutus-statistics-item .progress-bar-full {
+    width: 100%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;
+}
+.portfolio-section h2 {
+    font-size: 30px;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portfolio-section h2 em {
+    color: var(--primary-color);
+    font-style:  normal;
+}
+.portfolio-section h2 span {
+    color: var(--secondary-color);
+}
+.portfolio-section .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.portfolio-section .portfolio-items .portfolio-item {
+    transition: all 0.5s;
+}
+.portfolio-section .portfolio-items .portfolio-item:hover .hidden-content {
+    visibility: visible;
+    top: 0;
+}
+.portfolio-section .portfolio-items .portfolio-item:hover .showed-content {
+    top: 50px;
+}
+.portfolio-section .portfolio-items .portfolio-item .hidden-content {
+
+    visibility: hidden;
+    position: relative;
+    top: 60px;
+    padding: 50px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.portfolio-section .portfolio-items .portfolio-item .hidden-content::after {
+    content: '';
+    position: absolute;
+    border: 15px solid black;
+    bottom: -15px;
+    left: 50%;
+    border-top-color: var(--primary-color);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom: transparent;
+    
+}
+.portfolio-section .portfolio-items .portfolio-item .hidden-content h4 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+.portfolio-section .portfolio-items .portfolio-item .hidden-content p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+.portfolio-section .portfolio-items .portfolio-item .showed-content {
+    position: relative;
+    top: -20px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.contact-us-section {
+    padding-top: 180px;
+    padding-bottom: 300px;
+    background-image: url('images/contact-bg.png');
+    background-color: #fff;
+    background-size: cover;
+}
+.contact-us-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.contact-us-section .contact-us-content h2 {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 0.25px;
+    line-height: 40px;
+}
+.contact-us-section .contact-us-content p {
+    margin: 30px 0px;
+    color: #fff;
+    font-size: 15px;
+}
+.contact-us-section .contact-us-content .contact-us-info {
+    display: flex;
+    gap: 65px;
+}
+.contact-us-section .contact-us-content .contact-us-info span {
+    color: #fff;
+}
+.contact-us-section .contact-us-content h4 {
+    color: #fff;
+}
+.contact-us-section .contact-us-form form {
+    padding: 26px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-us-section .contact-us-form form input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: #d1f3ff;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+.contact-us-section .contact-us-form form input.input-name {
+    width: 49%;
+    margin-right: 5px;
+}
+.contact-us-section .contact-us-form form input.input-surname {
+    width: 49%;
+    margin-left: 5px;
+}
+.contact-us-section .contact-us-form form textarea {
+    width: 100%;
+    height:200px;
+    border: none;
+    outline: none;
+    background-color: #d1f3ff;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+    padding-top: 15px;
+}
+.contact-us-section .contact-us-form form input::placeholder,
+.contact-us-section .contact-us-form form textarea::placeholder {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.contact-us-section .contact-us-form form button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.contact-us-section .contact-us-form form button:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+footer p {
+    text-align: center;
+    color: var(--black);
+}
